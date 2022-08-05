@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Users Api</title>
+    <style>
+        .detailsBtn{
+            color: aqua;
+            background-color:blue;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,7 +29,11 @@
                     // 10ta user er name show korar jnno
                     const userContainer = document.getElementById('users');
                     const p = document.createElement('p');
-                    p.innerText = user.name;
+
+                    //if i style dynamically (then innerHTML)
+                    p.innerHTML = `
+                    Name : <b>${user.name}</b>
+                    <button class="detailsBtn">Details</button>`;
                     userContainer.appendChild(p);
                 }
             })
