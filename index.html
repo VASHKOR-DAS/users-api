@@ -9,7 +9,6 @@
     <style>
         .detailsBtn{
             color: aqua;
-            background-color:blue;
         }
     </style>
 </head>
@@ -33,8 +32,9 @@
                     //if i style dynamically (then innerHTML)
                     p.innerHTML = `
                     Name : <b>${user.name}</b>
-                    <button class="detailsBtn">Details</button>`;
+                    <button class="detailsBtn">Get Details</button>`;
                     userContainer.appendChild(p);
+
                 }
             })
     </script>
